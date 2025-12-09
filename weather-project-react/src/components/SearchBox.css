@@ -1,0 +1,117 @@
+
+
+/* 1. Spacing from the top */
+/* .SearchBox {
+    margin-top: -49px; 
+    text-align: center;
+    margin-right: -80px;
+}
+
+
+.SearchBox .MuiOutlinedInput-root {
+    border-radius: 30px !important; 
+    width: 250px;
+}
+
+
+.SearchBox button {
+    border-radius: 30px !important;
+    padding: 10px 25px;
+    color: white;
+    
+}
+.button-search {
+    width:280px;
+   justify-items: center;
+
+}
+
+/* ... your existing code ... */
+/* 
+@media screen and (min-width: 350px) and (max-width: 680px) {
+    
+    .SearchBox {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .SearchBox form {
+        display: flex;
+        flex-direction: row; /* Keep them side-by-side */
+        /* align-items: center;
+        width: 90%;          
+        gap: 8px;             */
+
+    /* Make the Input Field flexible */
+    /* .SearchBox .MuiTextField-root {
+        flex: 1;             /* Grow to fill empty space */
+        /* min-width: 0;        Prevents overflow */
+    
+
+    /* Adjust the Button
+    .SearchBox button {
+        height: 56px;        
+        min-width: 50px;     
+        padding: 0 15px;
+    } */
+    
+    /* OPTIONAL: Hide "Search" text on very small screens, show only Icon */
+    /* Uncomment below if you want ONLY the magnifying glass on mobile */
+    /* .SearchBox button .MuiButton-startIcon { margin: 0; }
+    .SearchBox button span { display: none; } 
+    */
+/* 1. Global Styles (Desktop First) */
+.SearchBox {
+    /* REMOVE margin-top: -49px and margin-right: -80px */
+    margin-top: 20px;  /* Give it positive space from the title */
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    width: 100%;
+}
+
+.SearchBox form {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Style the Input Field */
+.SearchBox .MuiOutlinedInput-root {
+    border-radius: 30px !important;
+    background-color: rgba(255, 255, 255, 0.1); /* Optional: slight glass background */
+    width: 300px; /* Default width for desktop */
+}
+
+/* Style the Search Button */
+.SearchBox button {
+    border-radius: 50% !important; /* Circle shape looks modern */
+    padding: 15px;
+    min-width: auto;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.SearchBox button:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+/* 2. MOBILE RESPONSIVE (350px - 680px) */
+@media screen and (min-width: 350px) and (max-width: 680px) {
+    
+    .SearchBox {
+        margin-top: 15px; /* Less space on mobile */
+    }
+
+    .SearchBox form {
+        width: 90%; /* Take up full width */
+        justify-content: center;
+    }
+
+    .SearchBox .MuiOutlinedInput-root {
+        width: 100%; /* Input stretches to fill space */
+        flex: 1;
+    }
+}

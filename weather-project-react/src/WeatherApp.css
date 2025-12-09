@@ -1,0 +1,36 @@
+/* .title {
+
+  font-size: 3rem;
+  color: #FFFFFF;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
+  margin-top: 15px;
+  margin-left: 1.5rem;
+}  */
+/* ... your existing code ... */
+/* Global Title Style */
+.title {
+    text-align: center; /* Ensures it is always centered */
+    font-size: 3.5rem;
+    color: #FFFFFF;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
+    margin: 0;         /* Reset margins */
+    padding-top: 30px; /* Space from top of screen */
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+/* MOBILE RESPONSIVE (350px - 680px) */
+@media screen and (min-width: 350px) and (max-width: 680px) {
+    
+    .title {
+        font-size: 2.2rem !important; /* Smaller on mobile */
+        padding-top: 20px;
+    }
+    
+    /* Ensure the main container stacks things vertically */
+    .weather-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
